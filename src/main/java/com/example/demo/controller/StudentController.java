@@ -85,6 +85,7 @@ public class StudentController {
 			Optional<Student> student = studentRepository.findById(studentId);
 
 			if (student.isPresent()) {
+				student.get().setStudentId(body.getStudentId());
 				student.get().setName(body.getName());
 				student.get().setEmail(body.getEmail());
 		

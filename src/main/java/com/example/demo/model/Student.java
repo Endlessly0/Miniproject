@@ -18,7 +18,7 @@ public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
-	private Integer studentId;
+	private String studentId;
 	private String name;
 	private String email;
 	
@@ -28,7 +28,7 @@ public class Student {
 		super();
 	}
 
-	public Student(Integer studentId, String name, String email) {
+	public Student(String studentId, String name, String email) {
 		super();
 		this.studentId = studentId;
 		this.name = name;
@@ -44,11 +44,11 @@ public class Student {
 		this.id = id;
 	}
 
-	public Integer getStudentId() {
+	public String getStudentId() {
 		return studentId;
 	}
 
-	public void setStudentId(Integer studentId) {
+	public void setStudentId(String studentId) {
 		this.studentId = studentId;
 	}
 
