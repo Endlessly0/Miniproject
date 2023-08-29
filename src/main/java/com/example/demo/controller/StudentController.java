@@ -41,7 +41,7 @@ public class StudentController {
 	}
 
 	@PostMapping("/student")
-	public ResponseEntity<Object> addEmployee(@RequestBody Student body) {
+	public ResponseEntity<Object> addS(@RequestBody Student body) {
 
 		try {
 			//Optional<Student> role = studentRepository.findById(4);
